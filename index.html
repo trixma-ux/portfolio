@@ -153,6 +153,33 @@
       transform: translateY(-2px);
       box-shadow: 0 10px 20px rgba(0, 245, 212, 0.3);
     }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-ghost:hover { border-color: var(--primary); color: var(--primary); box-shadow: none; }
+    .status {
+      position: absolute; top: 20px; right: 20px;
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 20px;
+    }
+    .status.live { background: rgba(0, 245, 212, 0.12); color: var(--primary); }
+    .status.live::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--primary);
+      box-shadow: 0 0 0 0 rgba(0,245,212,0.6); animation: pulse 2s infinite;
+    }
+    .status.soon { background: rgba(255, 0, 110, 0.12); color: var(--accent); }
+    .btn-disabled {
+      background: rgba(255,255,255,0.06); color: var(--muted); cursor: not-allowed; pointer-events: none;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,245,212,0.6); }
+      70% { box-shadow: 0 0 0 8px rgba(0,245,212,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,245,212,0); }
+    }
     footer {
       text-align: center;
       padding: 40px;
@@ -173,7 +200,7 @@
       <h1>GOMON STEVE</h1>
       <p class="subtitle">Développeur • Key User SAP PM • Créateur d'applications</p>
       <div class="socials">
-        <a href="https://github.com/trixma-ux" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/trixma-ux" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="mailto:stevegomon1@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="tel:+2250706058151"><i class="fas fa-phone"></i></a>
       </div>
@@ -185,6 +212,7 @@
       <h2>Mes Projets</h2>
       <div class="grid">
         <div class="card">
+          <span class="status live">En ligne</span>
           <h3>Schoolflow</h3>
           <p>Application Flutter de gestion scolaire et médias, avec Firebase. Interface moderne pour la gestion des établissements.</p>
           <div class="tags">
@@ -192,10 +220,11 @@
             <span class="tag">Firebase</span>
             <span class="tag">Web</span>
           </div>
-          <a href="https://trixma-ux.github.io/schoolflow/" target="_blank" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <div class="btn-group"><a href="https://trixma-ux.github.io/schoolflow/" target="_blank" rel="noopener" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a><a href="https://github.com/trixma-ux/schoolflow" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> Code</a></div>
         </div>
 
         <div class="card">
+          <span class="status live">En ligne</span>
           <h3>E-Pharmacy CI</h3>
           <p>Application de pharmacie en ligne développée en Flutter. Gestion des produits, commandes et suivi pour le marché ivoirien.</p>
           <div class="tags">
@@ -203,10 +232,11 @@
             <span class="tag">Dart</span>
             <span class="tag">Web</span>
           </div>
-          <a href="https://trixma-ux.github.io/e-pharmacy-ci/" target="_blank" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <div class="btn-group"><a href="https://trixma-ux.github.io/e-pharmacy-ci/" target="_blank" rel="noopener" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a><a href="https://github.com/trixma-ux/e-pharmacy-ci" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> Code</a></div>
         </div>
 
         <div class="card">
+          <span class="status soon">Bientôt</span>
           <h3>Mugetra-app</h3>
           <p>Plateforme complète de gestion de mutuelle (membres, cotisations, assistances, prêts, gouvernance). Stack full-stack moderne.</p>
           <div class="tags">
@@ -214,10 +244,11 @@
             <span class="tag">React</span>
             <span class="tag">Node.js</span>
           </div>
-          <a href="https://trixma-ux.github.io/mugetra-app/" target="_blank" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <div class="btn-group"><a href="https://github.com/trixma-ux/mugetra-app" target="_blank" rel="noopener" class="btn"><i class="fab fa-github"></i> Code</a><span class="btn btn-disabled"><i class="fas fa-clock"></i> Démo bientôt</span></div>
         </div>
 
         <div class="card">
+          <span class="status soon">Bientôt</span>
           <h3>Edusave</h3>
           <p>Application mobile de gestion de budget personnel. Suivi des dépenses par catégorie avec rapports graphiques (Android & iOS).</p>
           <div class="tags">
@@ -225,10 +256,11 @@
             <span class="tag">API REST</span>
             <span class="tag">Web</span>
           </div>
-          <a href="https://trixma-ux.github.io/edusave1/" target="_blank" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <div class="btn-group"><span class="btn btn-disabled"><i class="fas fa-clock"></i> Démo bientôt disponible</span></div>
         </div>
 
         <div class="card">
+          <span class="status live">En ligne</span>
           <h3>OneSave</h3>
           <p>Application web de gestion de projets et événements pour le Campus Numérique Francophone. Interface React moderne.</p>
           <div class="tags">
@@ -236,17 +268,18 @@
             <span class="tag">TypeScript</span>
             <span class="tag">Web</span>
           </div>
-          <a href="https://trixma-ux.github.io/OneSave/" target="_blank" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <div class="btn-group"><a href="https://one-save.vercel.app" target="_blank" rel="noopener" class="btn">Voir le site <i class="fas fa-arrow-right"></i></a><a href="https://github.com/trixma-ux/OneSave" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-github"></i> Code</a></div>
         </div>
 
         <div class="card">
+          <span class="status soon">Bientôt</span>
           <h3>Glovo-plus</h3>
           <p>Application de livraison développée en TypeScript. Gestion des commandes et suivi en temps réel.</p>
           <div class="tags">
             <span class="tag">TypeScript</span>
             <span class="tag">Livraison</span>
           </div>
-          <a href="https://github.com/trixma-ux/glovo-plus" target="_blank" class="btn">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+          <div class="btn-group"><a href="https://github.com/trixma-ux/glovo-plus" target="_blank" rel="noopener" class="btn"><i class="fab fa-github"></i> Code</a><span class="btn btn-disabled"><i class="fas fa-clock"></i> Démo bientôt</span></div>
         </div>
       </div>
     </div>
@@ -262,6 +295,7 @@
       const x = (e.clientX / window.innerWidth - 0.5) * 10;
       const y = (e.clientY / window.innerHeight - 0.5) * 10;
       cards.forEach((card, i) => {
+        if (card.matches(':hover')) { card.style.transform = ''; return; }
         const factor = (i % 3 + 1) * 0.3;
         card.style.transform = `translateY(${y * factor}px) translateX(${x * factor}px)`;
       });
