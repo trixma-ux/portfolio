@@ -1,1 +1,182 @@
-PLACEHOLDER_WILL_REPLACE
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gomon Steve | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-light: #14b8a6;
+      --dark: #0f172a;
+      --text: #334155;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header { background: linear-gradient(135deg, var(--dark), #1e293b); color: white; padding: 100px 0 80px; text-align: center; }
+    header h1 { font-size: 3.2rem; margin-bottom: 10px; }
+    header .title { font-size: 1.4rem; color: var(--primary-light); margin-bottom: 20px; }
+    header p { max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; }
+    .btn { display: inline-block; padding: 12px 28px; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; margin: 0 8px; transition: 0.3s; }
+    .btn:hover { background: var(--primary-light); transform: translateY(-2px); }
+    .btn-outline { background: transparent; border: 2px solid white; }
+    section { padding: 80px 0; }
+    h2 { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: var(--dark); }
+    .skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: var(--card); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.12); }
+    .card h3 { color: var(--primary); margin-bottom: 10px; }
+    .experience-item { margin-bottom: 30px; padding-left: 20px; border-left: 4px solid var(--primary); }
+    .contact { background: var(--dark); color: white; text-align: center; }
+    .contact a { color: var(--primary-light); }
+    footer { text-align: center; padding: 30px; background: #0a0f1a; color: #94a3b8; }
+    .tag { display: inline-block; background: #e2e8f0; color: var(--dark); padding: 4px 10px; border-radius: 20px; font-size: 0.85rem; margin: 3px; }
+    @media (max-width: 600px) { header h1 { font-size: 2.2rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>GOMON STEVE</h1>
+      <div class="title">Assistant Animateur SAP | Key User SAP PM | Développeur</div>
+      <p>Informaticien passionné par le développement web & mobile et l'optimisation des processus métier avec SAP. Key User PM à la Nouvelle Parfumerie Gandour, Abidjan.</p>
+      <a href="mailto:stevegomon1@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
+      <a href="tel:+2250706058151" class="btn"><i class="fas fa-phone"></i> +225 07 06 05 81 51</a>
+      <a href="https://github.com/trixma-ux" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Profil</h2>
+      <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p>Informaticien, key user du module SAP PM (Plant Maintenance) à la Nouvelle Parfumerie Gandour depuis un an. J'ai formé une vingtaine de techniciens de maintenance à SAP, je gère les stocks de pièces de maintenance de nombreux équipements de l'usine, je veille au respect des normes ISO 50001 et ISO 9001, je crée des tableaux de bord sous Excel et je fais le lien entre les utilisateurs et l'équipe SAP. Mon parcours de développeur web et mobile (PHP, JavaScript, Flutter, MySQL) me permet de comprendre aussi bien les besoins métier que la partie technique.</p>
+        <p style="margin-top: 15px;"><strong>Localisation :</strong> Abidjan, Côte d'Ivoire – Riviera Faya rue 37</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background: #f1f5f9;">
+    <div class="container">
+      <h2>Compétences clés</h2>
+      <div class="skills-grid">
+        <div class="card"><h3>SAP & Maintenance</h3><p>Module PM, gestion stocks maintenance, key user, formation utilisateurs, ISO 50001 & 9001</p></div>
+        <div class="card"><h3>Analyse & Reporting</h3><p>Excel avancé (TCD, segments, Power Query, Power Pivot), tableaux de bord</p></div>
+        <div class="card"><h3>Développement Web</h3><p>HTML, CSS, JavaScript, PHP, Bootstrap</p></div>
+        <div class="card"><h3>Développement Mobile</h3><p>Flutter, Dart (Android & iOS)</p></div>
+        <div class="card"><h3>Données & Intégration</h3><p>MySQL, Firebase, API REST</p></div>
+        <div class="card"><h3>Outils</h3><p>Git, Java, Python, planification projet, tests de charge</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Expérience professionnelle</h2>
+      <div class="experience-item">
+        <h3>Assistant Animateur SAP – Key User module PM</h3>
+        <p><strong>Nouvelle Parfumerie Gandour</strong> | Novembre 2025 – Présent</p>
+        <ul>
+          <li>Formation et accompagnement d'une vingtaine de techniciens de maintenance sur SAP PM</li>
+          <li>Gestion des stocks de pièces de rechange dans SAP (Tirelli, Autopack, etc.)</li>
+          <li>Création d'un tableau de bord Excel avancé (Power Query + Power Pivot) pour 30 000+ lignes d'avis et ordres de travail</li>
+          <li>Suivi des normes ISO 50001 et ISO 9001</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Stagiaire SAP</h3>
+        <p><strong>Nouvelle Parfumerie Gandour</strong> | Stage de 5 mois</p>
+        <p>Prise en main de SAP et du module maintenance. Poste confirmé à l'issue du stage.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Développeur Web (stage)</h3>
+        <p><strong>Ipel, Abidjan</strong> | Juin 2023 – Août 2023</p>
+        <p>Conception et développement d'une solution de gestion des factures et devis en HTML, CSS, JavaScript, PHP et MySQL, au sein d'une équipe de 5 développeurs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="background: #f1f5f9;">
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Edusave</h3>
+          <p>Application mobile de gestion de budget personnel (Flutter/Dart + MySQL + API REST). Classement des dépenses par catégorie et rapports graphiques. Android & iOS.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">API REST</span></div>
+          <p style="margin-top:10px;"><a href="https://github.com/trixma-ux/edusave1" target="_blank">Voir sur GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Schoolflow – SCHOOL MEDIA</h3>
+          <p>Application Flutter pour la gestion scolaire / médias scolaires, avec intégration Firebase.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+          <p style="margin-top:10px;"><a href="https://github.com/trixma-ux/schoolflow" target="_blank">Voir sur GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>E-Pharmacy CI</h3>
+          <p>Application de pharmacie en ligne (Flutter). Gestion des produits, commandes, etc.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span></div>
+          <p style="margin-top:10px;"><a href="https://github.com/trixma-ux/e-pharmacy-ci" target="_blank">Voir sur GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Mugetra-app</h3>
+          <p>Application complète de gestion de mutuelle (MUGETRA-NPG.CI) : membres, cotisations, assistances, prêts, gouvernance, comptabilité. Stack full-stack TypeScript / React / Node.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+          <p style="margin-top:10px;"><a href="https://github.com/trixma-ux/mugetra-app" target="_blank">Voir sur GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Glovo-plus</h3>
+          <p>Application de livraison (TypeScript / monorepo).</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Livraison</span></div>
+          <p style="margin-top:10px;"><a href="https://github.com/trixma-ux/glovo-plus" target="_blank">Voir sur GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Gestion factures & devis (Ipel)</h3>
+          <p>Solution web de gestion des factures et devis développée en PHP, JS, MySQL lors du stage.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
+        </div>
+        <div class="card">
+          <h3>Application web de gestion hôtelière</h3>
+          <p>Projet académique : gestion des réservations en JavaScript, Bootstrap et Firebase. Tests de charge réalisés.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Firebase</span></div>
+        </div>
+        <div class="card">
+          <h3>Autres projets</h3>
+          <p>OneSave, CryptoXchange, Assistant vocal ivoirien, gestion de tâches, etc. Disponibles sur GitHub.</p>
+          <p style="margin-top:10px;"><a href="https://github.com/trixma-ux" target="_blank">Tous les dépôts</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formation">
+    <div class="container">
+      <h2>Formation</h2>
+      <div class="card" style="max-width: 600px; margin: 0 auto;">
+        <p><strong>BTS Informatique (admissibilité)</strong> – HEC Abidjan | 2023 – 2024<br>
+        Programmation (Java, Python), bases de données, gestion de projets. Projet : application web de gestion d'inventaire.</p>
+        <p style="margin-top: 15px;"><strong>Baccalauréat Scientifique</strong> – Lycée Classique d'Abidjan | 2021 – 2022</p>
+        <p style="margin-top: 15px;"><strong>Langues :</strong> Français (langue maternelle) • Anglais B2</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 style="color: white;">Contact</h2>
+      <p>Disponible pour des opportunités en développement, SAP Key User ou projets digitaux.</p>
+      <p style="margin: 20px 0;"><i class="fas fa-envelope"></i> <a href="mailto:stevegomon1@gmail.com">stevegomon1@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+2250706058151">+225 07 06 05 81 51</a></p>
+      <p style="margin-top: 10px;"><i class="fab fa-github"></i> <a href="https://github.com/trixma-ux" target="_blank">github.com/trixma-ux</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Gomon Steve • Portfolio créé et déployé via GitHub</p>
+  </footer>
+</body>
+</html>
